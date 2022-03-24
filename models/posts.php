@@ -1,5 +1,5 @@
 <?php
-class Posts extends model {
+class Posts extends Model {
 
 	public function getPosts($limite = 0) {
 		$array = array();

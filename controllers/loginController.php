@@ -1,18 +1,10 @@
 <?php
-class loginController extends controller
+class LoginController extends controller
 {
-
-    // public function __construct() {
-    //     parent::__construct();
-
-    //     $u = new Users();
-    //     if($u->isLogged() === false){
-    //        header("Location: ".BASE_URL+"/login"); 
-    //     }
-    // }
 
     public function index()
     {
+        
         $data = array();
 
         if (isset($_POST['email']) && !empty($_POST['email'])) {

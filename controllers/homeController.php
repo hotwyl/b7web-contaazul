@@ -1,12 +1,12 @@
 <?php
-class homeController extends controller {
+class HomeController extends controller {
 
     public function __construct() {
         parent::__construct();
 
         $u = new Users();
         if($u->isLogged() === false){
-           header("Location: ".BASE_URL."/login"); 
+        //    header("Location: ".BASE_URL."/login"); 
         }
     }
 
