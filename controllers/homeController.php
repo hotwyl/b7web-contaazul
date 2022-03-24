@@ -6,7 +6,7 @@ class HomeController extends controller {
 
         $u = new Users();
         if($u->isLogged() === false){
-        //    header("Location: ".BASE_URL."/login"); 
+           header("Location: ".BASE_URL."/login"); 
         }
     }
 
