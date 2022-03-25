@@ -4,7 +4,6 @@ class LoginController extends controller
 
     public function index()
     {
-        
         $data = array();
 
         if (isset($_POST['email']) && !empty($_POST['email'])) {
@@ -22,5 +21,14 @@ class LoginController extends controller
         }
 
         $this->loadView('login', $data);
+    }
+
+    public function logout()
+    {
+        $u = new Users();
+        $u->logout();
+
+        header("Location: ".BASE_URL);
+        exit;
     }
 }
